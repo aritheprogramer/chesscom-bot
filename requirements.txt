@@ -1,0 +1,4 @@
+pyqt5
+selenium
+python-chess
+pyautogui
