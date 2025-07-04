@@ -1,109 +1,127 @@
 # ♟️ Chess.com Bot
 
-Un bot Python automatisé qui joue sur Chess.com en utilisant le moteur Stockfish et une interface graphique moderne avec PyQt5.
+A Python automated bot that plays on Chess.com using the Stockfish engine and a modern graphical interface built with PyQt5.
 
 ---
 
-## 🚀 Fonctionnalités
+## 🚀 Features
 
-✅ Détection automatique des coups joués via Selenium  
-✅ Calcul du meilleur coup avec Stockfish  
-✅ Clic automatique sur l’échiquier (optionnel)  
-✅ Calibration visuelle simple et sauvegardée automatiquement  
-✅ Interface graphique claire et intuitive  
-✅ Historique des coups affiché en temps réel
+✅ Automatic detection of moves played via Selenium  
+✅ Best move calculation with Stockfish  
+✅ Optional automatic clicking on the chessboard  
+✅ Simple visual calibration saved automatically  
+✅ Clear and intuitive graphical interface  
+✅ Real-time display of move history
 
 ---
 
-## 🛠️ Prérequis
+## 🛠️ Requirements
 
 - Python 3.7+
 - Google Chrome
-- Chromedriver compatible (https://chromedriver.chromium.org/downloads)
-- Stockfish (fourni dans le dossier `stockfish/`)
+- Compatible Chromedriver (https://chromedriver.chromium.org/downloads)
+- Stockfish (provided in the `stockfish/` folder)
 
 ---
 
-## 📂 Structure du projet
+## ⚠️ Chromedriver
+
+This project requires `chromedriver`.  
+Please download the version matching your installed Chrome here:
+
+https://chromedriver.chromium.org/downloads
+
+Then, place the executable either in your system PATH or in the project folder.
+
+---
+
+## 📂 Project Structure
 
 ```
 chesscom-bot/
-├── bot.py                 # Script principal
-├── requirements.txt       # Dépendances Python
-├── README.md              # Ce fichier
-├── .gitignore             # Fichiers à ignorer
-├── stockfish/             # Contient l'exécutable Stockfish
-│   └── stockfish-mac      # Exemple pour MacOS
-└── assets/                # (Optionnel) Logos, images
+├── bot.py                 # Main script
+├── requirements.txt       # Python dependencies
+├── README.md              # This file
+├── .gitignore             # Ignored files
+├── stockfish/             # Contains the Stockfish executable
+    └── stockfish-mac      # Example for macOS
 ```
 
 ---
 
 ## 📦 Installation
 
-1️⃣ Clonez le dépôt :
+1️⃣ Clone the repository:
 ```
-git clone https://github.com/votreutilisateur/chesscom-bot.git
+git clone https://github.com/aritheprogramer/chesscom-bot.git
 ```
 
-2️⃣ Entrez dans le dossier :
+2️⃣ Enter the directory:
 ```
 cd chesscom-bot
 ```
 
-3️⃣ Installez les dépendances :
+3️⃣ Install dependencies:
 ```
 pip install -r requirements.txt
 ```
 
-4️⃣ Vérifiez que `chromedriver` est installé et disponible dans le PATH.
+4️⃣ Make sure `chromedriver` is installed and available in your PATH.
 
 ---
 
-## ⚙️ Utilisation
+## ⚙️ Usage
 
-1️⃣ Lancez le bot :
+1️⃣ Launch the bot:
 ```
 python bot.py
 ```
 
-2️⃣ Ouvrez Chrome via l'interface (`Ouvrir Chrome`).
+2️⃣ Open Chrome via the interface (`Open Chrome`).
 
-3️⃣ Connectez-vous sur [chess.com] et démarrez une partie.
+3️⃣ Log in to [chess.com](https://www.chess.com/play/computer) and start a game.
 
-4️⃣ Cliquez sur `Calibrer l’échiquier` :
-- Placez la souris sur le coin supérieur gauche et validez.
-- Placez la souris sur le coin inférieur droit et validez.
+4️⃣ Click `Calibrate Board`:
+- Place the mouse over the top-left corner and confirm.
+- Place the mouse over the bottom-right corner and confirm.
 
-✅ La calibration est sauvegardée automatiquement et sera restaurée aux prochains lancements.
+✅ The calibration is saved automatically and will be restored in future sessions.
 
-5️⃣ Choisissez votre couleur (`Blanc` ou `Noir`).
+5️⃣ Choose your color (`White` or `Black`).
 
-6️⃣ Cliquez sur `Démarrer le Bot`.
+6️⃣ Click `Start Bot`.
 
-7️⃣ Pour arrêter le bot, cliquez sur `Arrêter le Bot`.
+7️⃣ To stop the bot, click `Stop Bot`.
 
 ---
 
-## 🧩 Options disponibles
+## 🧩 Available Options
 
-- **Clic automatique** : active/désactive la saisie automatique du coup sur l’échiquier.
-- **Délai** : nombre de secondes entre les vérifications du coup joué (par défaut 1s).
+- **Auto-click**: enable or disable automatic move input on the board.
+- **Delay**: number of seconds between move checks (default: 1s).
 
 ---
 
 ## 💾 Calibration
 
-La calibration est stockée dans un fichier `calibration.txt` à la racine du projet :
+The calibration is stored in a `calibration.txt` file at the project root:
 ```
 x0,y0,square_width,square_height
 ```
-Pour réinitialiser, supprimez ce fichier et relancez la calibration.
+To reset, delete this file and re-run the calibration process.
 
 ---
 
-## ✨ Contribuer
+## ✨ Contributing
 
-Les contributions sont les bienvenues !  
-Proposez une *issue* ou ouvrez une *pull request* si vous souhaitez apporter des améliorations.
+Contributions are welcome!  
+Feel free to open an *issue* or submit a *pull request* if you would like to improve the project.
 
+---
+
+## 🖥️ Disclaimer and Support
+
+This project was developed and tested on **macOS** and has **not been tested on other platforms**.  
+If you encounter any issues or bugs, please open an issue on the [GitHub repository](https://github.com/aritheprogramer/chesscom-bot) to report them.
+
+---
