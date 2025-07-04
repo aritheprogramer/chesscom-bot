@@ -122,6 +122,7 @@ Feel free to open an *issue* or submit a *pull request* if you would like to imp
 ## 🖥️ Disclaimer and Support
 
 This project was developed and tested on **macOS** and has **not been tested on other platforms**.  
+The program itself is in **French 🇫🇷**, I may do a language update in the future.
 If you encounter any issues or bugs, please open an issue on the [GitHub repository](https://github.com/aritheprogramer/chesscom-bot) to report them.
 
 ---
